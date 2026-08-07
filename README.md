@@ -4,20 +4,20 @@ Loom transforms any webcam into a complete music controller: move your hand, cha
 
 ## How does it work
 
-1. The camera detects your hand with `HandLandmarker` from MediaPipe — 21 landmarks of reference per hand.
+1. The camera detects your hand with `HandLandmarker` from MediaPipe, a total of 21 landmarks of reference per hand.
 2. The position of the wrist and the number of extended fingers determine which instrument, pitch, and volume are played.
 3. Tone.js synthesizes the audio with reverb and delay, both controllable from the UI.
 4. Every note can be recorded. Click REC, play, then click STOP. The result appears on the Timeline, with its waveform, ready to be moved, cut, faded, duplicated, or exported.
 
 ## UI
 
-The app is designed as a workspace of floating windows (draggable, minimizable, and adjustable in width/height), instead of a fixed layout — so every user can set up their own preferred way of working.
+The app is designed as a workspace of floating windows (draggable, minimizable, and adjustable in width/height), instead of a fixed layout; that way  every user can set up their own preferred way of working as in many other DAW.
 
-- **Camera** — live feed with the hand skeleton overlay
-- **Theremin Controls** — reverb, delay, octave, and the REC button
-- **Tracks** — list of tracks with solo/mute/arm/volume
-- **Transport** — playback, BPM
-- **Sequencer** — build your own rhythms from simple samples
+- **Camera** - live feed with the hand skeleton overlay
+- **Theremin Controls** - reverb, delay, octave, and the REC button
+- **Tracks** - list of tracks with solo/mute/arm/volume
+- **Transport** - playback, BPM
+- **Sequencer** - build your own rhythms from simple samples
 
 ## Features
 
@@ -25,7 +25,7 @@ The app is designed as a workspace of floating windows (draggable, minimizable, 
 - Recording performance → clip on the Timeline with offline render
 - Complete Timeline: move, cut, trim, duplicate, fade in/out, per-clip volume, multi-selection via drag, context menu
 - Configurable snap (1/4, 1/8, 1/16, free)
-- Undo/Redo (command pattern) — `Ctrl+Z` / `Ctrl+Y`
+- Undo/Redo (command pattern) - `Ctrl+Z` / `Ctrl+Y`
 - Export to WAV / MIDI / MP3
 - Save and load complete projects (`.zip`)
 - Visual indicator of active recording
@@ -40,7 +40,7 @@ The app is designed as a workspace of floating windows (draggable, minimizable, 
 - Rust (Tauri's native wrapper)
 
 **Frontend / Builder**
-- Vite — bundler and dev server
+- Vite, as a bundler and dev server
 
 **Audio**
 - Tone.js
@@ -65,21 +65,21 @@ The app is designed as a workspace of floating windows (draggable, minimizable, 
 
 Download the version published in GitHub Releases and install LOOM on your desktop.
 
-### Option 2 — Web (development)
+### Option 2 - Web (development)
 
 ```bash
 npm install
 npm run dev
 ```
 
-### Option 3 — Production build
+### Option 3 - Production build
 
 ```bash
 npm run build
 npx serve dist
 ```
 
-### Option 4 — Desktop (Tauri)
+### Option 4 - Desktop (Tauri)
 
 ```bash
 npm run tauri build
@@ -87,7 +87,7 @@ npm run tauri build
 
 The installer will be located in `src-tauri/target/release/bundle/`.
 
-> **Note**: on Windows, the installer isn't digitally signed. It's normal for the "Windows protected your PC" warning to appear — click **More info → Run anyway** to continue.
+> **Note**: on Windows, the installer isn't digitally signed. It's normal for the "Windows protected your PC" warning to appear, just click **More info → Run anyway** to continue.
 
 
 ## License
