@@ -1,23 +1,23 @@
 # LOOM - A Gestual Theremin and Mini-DAW
 
-Loom transforms any webcam into a complete music controller: move your hand, change the instrument, and control the volume in real time. Every performance can be recorded directly into a multi-track editor with real DAW tools.
+Loom transforms any webcam into a complete music controller: move your hand, change the instrument, and control the volume in real time. Every performance can be recorded directly into a multi-track editor with tools inspired on the typicals you could find in any major DAW platform.
 
 ## How does it work
 
 1. The camera detects your hand with `HandLandmarker` from MediaPipe, a total of 21 landmarks of reference per hand.
 2. The position of the wrist and the number of extended fingers determine which instrument, pitch, and volume are played.
 3. Tone.js synthesizes the audio with reverb and delay, both controllable from the UI.
-4. Every note can be recorded. Click REC, play, then click STOP. The result appears on the Timeline, with its waveform, ready to be moved, cut, faded, duplicated, or exported.
+4. Every note can be recorded. Click REC, play, then click STOP. The result will be appearing on the Timeline, with its own real waveform, ready to be moved, cut, faded, duplicated, exported or many more...
 
 ## UI
 
-The app is designed as a workspace of floating windows (draggable, minimizable, and adjustable in width/height), instead of a fixed layout; that way  every user can set up their own preferred way of working as in many other DAW.
+The app is designed as a workspace of floating windows (draggable, minimizable, and adjustable in width/height), instead of a fixed layout; made in a way so every user is able to set up Loom in their own preferred way of working as in many other DAW.
 
-- **Camera** - live feed with the hand skeleton overlay
-- **Theremin Controls** - reverb, delay, octave, and the REC button
-- **Tracks** - list of tracks with solo/mute/arm/volume
-- **Transport** - playback, BPM
-- **Sequencer** - build your own rhythms from simple samples
+- **Camera** a live feed with the hand skeleton overlay
+- **Theremin Controls** allowing you to control things such as reverb, delay, octave, and the REC button
+- **Tracks** with the list  of tracks and solo/mute/arm/volume controllers
+- **Transport** playback, BPM
+- **Sequencer** which allows you to build your own rhythms from simple samples
 
 ## Features
 
@@ -25,7 +25,7 @@ The app is designed as a workspace of floating windows (draggable, minimizable, 
 - Recording performance → clip on the Timeline with offline render
 - Complete Timeline: move, cut, trim, duplicate, fade in/out, per-clip volume, multi-selection via drag, context menu
 - Configurable snap (1/4, 1/8, 1/16, free)
-- Undo/Redo (command pattern) - `Ctrl+Z` / `Ctrl+Y`
+- Undo/Redo (command pattern), with `Ctrl+Z` and `Ctrl+Y`
 - Export to WAV / MIDI / MP3
 - Save and load complete projects (`.zip`)
 - Visual indicator of active recording
@@ -55,13 +55,13 @@ The app is designed as a workspace of floating windows (draggable, minimizable, 
 
 ## How to use it
 
-### Dependencies
+### Dependencies and requisites
 
 - [Node.js](https://nodejs.org/) 18+ and npm
 - To build the desktop version: [Rust](https://www.rust-lang.org/tools/install) and Tauri's system dependencies ([official guide](https://tauri.app/start/prerequisites/))
 - A webcam (for gesture detection)
 
-### Option 1 — Releases
+### Option 1 - Releases
 
 Download the version published in GitHub Releases and install LOOM on your desktop.
 
