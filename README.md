@@ -1,4 +1,4 @@
-# LOOM — Gestural Theremin and Mini-DAW
+# LOOM - A Gestual Theremin and Mini-DAW
 
 Loom transforms any webcam into a complete music controller: move your hand, change the instrument, and control the volume in real time. Every performance can be recorded directly into a multi-track editor with real DAW tools.
 
