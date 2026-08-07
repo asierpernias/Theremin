@@ -1,10 +1,6 @@
-LOOM – User Guide
-
-Overview
-
-LOOM is a gesture-controlled Digital Audio Workstation (DAW) that enables music composition through a virtual theremin. Utilizing hand tracking powered by MediaPipe, you can perform melodies without a physical controller.
-
-The application is organized into five main sections:
+LOOM -
+User Guide
+First of all, you have to know how the application is organized into five main sections:
 
 1. Camera
 2. Transport
@@ -16,37 +12,34 @@ Camera
 
 The Camera window shows the live webcam feed and tracks your dominant hand. Before using LOOM:
 
-- Allow camera access when prompted.
-- Ensure your hand is clearly visible.
-- Use adequate lighting.
-- Keep your hand in the central area of the image for optimal tracking.
+- Allow camera access when prompted (left corner possibly).
+- Ensure your hand is clearly visible in the screen displayed.
+- Use adequate lighting for better capturation.
+- Keep your hand in the central area, and far enough, of the image for optimal tracking.
 
 Gesture Mapping
 
 - Move left/right: Change pitch
 - Move up/down: Change volume
-- Adjust the number of extended fingers: Switch instrument
+- Adjust the number of extended fingers: Switch between a series of different instruments
 
 Theremin Controls
 
-This panel allows you to configure the virtual instrument. Depending on the version in use, you can:
+This panel will allow you to see values, control some instrument characteristics and record tracks.
 
-- View the active instrument.
-- Monitor the generated note and current volume.
-- Adjust theremin parameters.
-- Select different sound presets.
+Any change in the camera recording will be displayed with minimal retard here. 
 
-Altering the number of visible fingers will automatically switch the active instrument.
+Upon finishing recording, LOOM automatically creates a clip and places it on the selected track.
 
 Transport
 
-The Transport panel manages playback and recording.
+The Transport panel manages the playback.
 
 - Play: Starts playback of your current project.
 - Stop: Stops playback and resets the playhead.
-- Record: Starts recording your theremin performance.
+- Loop: Sets the playback into a loop.
 
-Upon finishing recording, LOOM automatically creates a clip and places it on the selected track.
+This panel also displays the second which is being played.
 
 Tracks
 
@@ -62,13 +55,15 @@ Tracks can contain multiple clips.
 
 Timeline
 
-The Timeline is where you assemble your project. Here you can:
+The Timeline is where you are able to assemble your project. Here you can:
 
-- View all recorded clips.
+- View all recorded clips/tracks.
 - Position and move clips in time.
 - Select clips.
 - Arrange multiple tracks.
 - Track the playback cursor during playback.
+
+Moreover you are able to multi-select clips/duplicate them/contol fade in and fade out and many other things. 
 
 Each horizontal lane represents a track.
 
