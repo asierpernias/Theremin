@@ -89,9 +89,6 @@ The installer will be located in `src-tauri/target/release/bundle/`.
 
 > **Note**: on Windows, the installer isn't digitally signed. It's normal for the "Windows protected your PC" warning to appear — click **More info → Run anyway** to continue.
 
-## Screenshots
-
-*(coming soon)*
 
 ## License
 
